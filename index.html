@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+	<TITLE> DMcompress </TITLE>
+	<meta name="generator" content="Bluefish 2.2.2" >
+	<META NAME="Rongjie Wang" CONTENT="">
+	<META NAME="Keywords" CONTENT="">
+	<META NAME="Description" CONTENT="08.27.2016">
+	</HEAD>
+
+	<BODY>
+	<h1 align="center"><strong>Dynamic Markov Compression ( DMcompress )</strong></h1>
+	<h3 align="center"><b>Bioinformatics Lab</b></h3>
+	<h3 align="center"><b>School of Computer Science and Technology, Harbin Institute of Technology</b></h3><br>
+	
+	<h2 align="left"><b>About DMcompress</b></h2>	
+	<p align="left">DMcompress is compression tool for FASTA and multi-FASTA files. DMcompression aim at exploit sequences self properties which could bring improvement at compression ratio. We use the sequences first Entropy as measure of data complexity to determine the orders of Markov models, experimental results on whole latest complete bacterial genome data show that our method could effectively compress genome with a better result.
+<br></P>	
+	<p align="left"><br><br></P>	
+	
+	<h2 align="left"><b>Software Download</b></h2>
+	
+	<p align="left"><strong>Input files:</strong></p>
+	<p align="left">Test data download: <a target="_blank" href="test.fasta.gz" class="no_underline"> test.fasta.gz</a>.</p>
+	
+	<h2 align="left"><b>User Manual</b></h2>
+	<I><strong>Pre-Requesites</strong></I><br>
+	<p align="left"><table id="bulletPoint"><tr><td><ul><li>DMcompress should be executed on <strong>Linux</strong> system.</div></li></ul></td></tr></table>
+	<table id="bulletPoint"><tr><td><ul><li>Download the excute <strong>Encode</strong>: <a target="_blank" href="DMcompressC" class="no_underline"> DMcompressC </a>.</p> </table>
+	<table id="bulletPoint"><tr><td><ul><li>Download the excute <strong>Decode</strong>: <a target="_blank" href="DMcompressD" class="no_underline"> DMcompressD </a>.</p> </table> 
+
+	<I><strong>Run for DMcompress</strong></I><br>
+	<p align="left"><div style="text-indent:2em;">1: Input data format should in .fasta or multi fasta.<br></p>
+	<p align="left"><div style="text-indent:2em;">2: sudo chmod 777 DMcompressC<br></p>
+	<p align="left"><div style="text-indent:2em;">3: sudo chmod 777 DMcompressD<br></p>
+	<p align="left"><div style="text-indent:2em;">4: Then execute DMcompress by:<br></p>
+	<div style="text-indent:4em;">DMcompressC inputFile <br></div><p></p>
+	<div style="text-indent:6em;">eg: DMcompressC test.fasta;
+	<br><br></div>
+	<div style="text-indent:6em;">( It will generate a file name test.fasta.c in the same directory ).
+	<br><br></div>
+	<div style="text-indent:4em;">DMcompressD inputFile <br></div><p></p>
+	<div style="text-indent:6em;">eg: DMcompressD test.fasta.c;
+	<br><br></div>
+	<div style="text-indent:6em;">( It will generate a file name test.fasta.c.d in the same directory, test.fasta.c.d will be same with the first input file test.fasta ).
+	<br><br></div>
+	
+		<div style="text-indent:2em;"><b>General options</b> include:<br><br></div>
+		<div style="text-indent:4em;"><strong>o</strong>: output file (default: outputFile.c);<br></div> <p></p>
+		<div style="text-indent:4em;"><strong>v</strong>: (version); <br></div>	<p></p>	
+		<div style="text-indent:4em;"><strong>t</strong>: maxProcs (default: 2); <br></div>		
+			<br>
+	
+	
+	
+	<h2 align="left"><b><div style="text-indent:0em;">Citation</b></h2>
+		<p align="left"><div style="text-indent:0em;"></I> <a target="_blank" href=""></a> </p>
+	
+	<h2 align="left"><b><div style="text-indent:0em;">Contact</b></h2>
+	<p align="left"><div style="text-indent:0em;">Correspondences regarding the DMcompress should be directed to Rongjie Wang via <a href="mailto:ybai@hit.edu.cn">rjwang.hit@gmail.com</a>.</p>
+	</BODY>
+</HTML>
